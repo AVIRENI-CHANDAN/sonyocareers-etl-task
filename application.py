@@ -36,10 +36,7 @@ if __name__ == "__main__":
 
     records = get_all_tables(total_pages, base_url)
 
-    print(records, file=open("file_content.txt", "w"))
-
     results = calculate_winner_looser(records)
-    print(results, file=open("output.txt", "w"))
 
     # Create a workbook and select the active worksheet
     wb = Workbook()
@@ -62,4 +59,4 @@ if __name__ == "__main__":
         ws2.append(list(entry.values()))
 
     # Save the workbook
-    wb.save("teams_and_players_data.xlsx")
+    wb.save("output.xlsx")
