@@ -28,3 +28,6 @@ venv/
 
 # csv files
 *.csv
+
+# excel files
+output.xlsx
