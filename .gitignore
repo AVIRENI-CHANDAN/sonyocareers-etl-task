@@ -25,3 +25,6 @@ venv/
 
 # html files
 *.html
+
+# csv files
+*.csv
