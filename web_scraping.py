@@ -35,7 +35,7 @@ def get_table_data(base_url, page_number):
         ot_losses = row.find("td", class_="ot-losses").text.strip()
         team_data = {
             "Team Name": row.find("td", class_="name").text.strip(),
-            "Year": int(row.find("td", class_="year").text.strip()),
+            "Year": row.find("td", class_="year").text.strip(),
             "Wins": int(row.find("td", class_="wins").text.strip()),
             "Losses": int(row.find("td", class_="losses").text.strip()),
             "OT Losses": int(ot_losses) if ot_losses != "" else 0,
