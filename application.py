@@ -4,10 +4,6 @@ from web_scraping import get_all_tables
 
 
 def calculate_winner_looser(data):
-    # Convert wins to integers and process the data
-    for team in data:
-        team["Wins"] = int(team["Wins"])
-
     # Group teams by year
     teams_by_year = defaultdict(list)
     for team in data:
